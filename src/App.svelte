@@ -1,18 +1,23 @@
-<script>
-	import Router from 'svelte-spa-router'
-	import Home from './routes/Home.svelte';
-	import VKeyboard from "./routes/v-keyboard/VKeyboard.svelte";
+<style>
+</style>
 
-	const routes = {
-		'/':Home,
-		'/v-keyboard':VKeyboard
-	}
+<script>
+import Router from "svelte-spa-router";
+import Home from "./routes/Home.svelte";
+import { link } from "svelte-spa-router";
+
+import VKeyboard from "./routes/1.v-keyboard/VKeyboard.svelte";
+import ImageSlider from "./routes/2.image-slider/index.svelte";
+
+const routes = {
+    "/": Home,
+    "/v-keyboard": VKeyboard,
+    "/image-slider": ImageSlider,
+};
 </script>
 
-home
-<Router {routes}/>
+<a href="/" use:link>home</a>
 
-
-<style>
-
-</style>
+<div>
+    <Router routes="{routes}" />
+</div>
