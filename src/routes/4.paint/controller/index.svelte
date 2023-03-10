@@ -1,7 +1,7 @@
 <script>
-import Tools from "./Tools.svelte";
-import Colors from "./Colors.svelte";
+import Tools from "./Tools.svelte"
 </script>
 
-<Tools />
-<Colors />
+<div>
+    <Tools />
+</div>

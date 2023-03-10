@@ -4,5 +4,6 @@
     "svelteBracketNewLine": true,
     "svelteAllowShorthand": false,
     "svelteIndentScriptAndStyle": false,
-    "tabWidth": 4
+    "tabWidth": 4,
+    "semi": false
 }
